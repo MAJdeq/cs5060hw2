@@ -44,7 +44,7 @@
 
 ### *Reflection*
 
-* Depending on the strategy you use, in this case, randomness will always tank your reward, however, when restarting Thomson at step 3000, we will always have the highest convergence by the 10,000th step. Compared to the standard approach, epsilon-greedy will not respond to the change in the market. The standard approach (Thomson) will immediately respond to the change in the market, and will rebound fairly well and decline at a stable rate. Thomson reset at step 3000 responds insanely well to the new market bumps, and declines at a stable rate as well. In essence, when thrown into an adaptable environment, you should not use epsilon greedy, but Thomson, as it reacts a lot better to adaptability.
+* Depending on the strategy you use, in this case, randomness will always tank your reward, however, when restarting Thomson at step 3000, we will always have the highest convergence by the 10,000th step. Compared to the standard approach, epsilon-greedy will not respond to the change in the market. The standard approach (Thomson) will immediately respond to the change in the market, and will rebound fairly well and decline at a stable rate. Thomson reset at step 3000 responds very well to the new market bumps, and declines at a stable rate as well. In essence, when thrown into an adaptable environment, you should not use epsilon greedy, but Thomson, as it reacts a lot better to adaptability.
   
   ![image](https://github.com/user-attachments/assets/682487be-e311-40d6-8d3f-31fa7b760dfa)
 
