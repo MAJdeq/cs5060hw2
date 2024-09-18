@@ -13,12 +13,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     .margin_right(20)
     .x_label_area_size(30)
     .y_label_area_size(30)
-    // .build_cartesian_2d(0..STEPS, -100f32..100f32)?;
     .build_cartesian_2d(0..STEPS, -0.75f32..2.4f32)?;
 
   chart.configure_mesh().draw()?;
 
-  let probabilities = probabilities(0.0);
+  let probabilities = probabilities(0);
   let mut epsilon_greedy = EpsilonGreedy::new(probabilities.len(), ExploreRandom::new());
 
   let line1 = LineSeries::new(

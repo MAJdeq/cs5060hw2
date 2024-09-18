@@ -3,7 +3,6 @@ use rand::{Rng, SeedableRng};
 use rand::prelude::SliceRandom;
 use rand::rngs::{SmallRng};
 use rand_distr::{Beta, Normal};
-use rand_distr::num_traits::float::TotalOrder;
 
 pub const STEPS: i32 = 10000;
 pub fn probabilities(step: i32) -> Vec<Normal<f32>> {
@@ -58,7 +57,7 @@ pub fn probabilities(step: i32) -> Vec<Normal<f32>> {
   ]
 }
 
-trait ExplorationStrategy {
+pub trait ExplorationStrategy {
   fn pick(&mut self, explore: bool, choices: &Vec<Vec<f32>>, current_best: usize) -> usize;
 }
 
