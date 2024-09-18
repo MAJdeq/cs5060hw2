@@ -4,6 +4,25 @@
 * Ethan Ford
 * Nathan Freestone
 
+## How to run this code!
+
+1. install Rust ([guide](https://www.rust-lang.org/tools/install))
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+2. run the code
+
+```bash
+cargo run --bin part1
+cargo run --bin part2
+cargo run --bin part3
+```
+This will run the binaries for each individual part of the homework respectively. Graphs will appear as .png files in the root directory.
+
+if you want it to run faster, you can try adding the `--release` tag to the command.
+
 ## **Part 1: Epsilon-Greedy Algorithm in a Static Environment**
 
 ### *Epsilon-Greedy Algorithm*
