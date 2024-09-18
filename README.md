@@ -23,9 +23,15 @@ This will run the binaries for each individual part of the homework respectively
 
 if you want it to run faster, you can try adding the `--release` tag to the command.
 
+
+
+### **AN IMPORTANT NOTE**
+The y-axis for each graph is total average reward.
+
 ## **Part 1: Epsilon-Greedy Algorithm in a Static Environment**
 
 ### *Epsilon-Greedy Algorithm*
+
 * After implementing the epsilon-greedy algorithm, the optimal epsilon that converges the fastest, appeared to be 0.05:
   
   ![image](https://github.com/user-attachments/assets/778d920a-0ecc-454a-9019-b13387bb6e86)
